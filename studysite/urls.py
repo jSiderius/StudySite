@@ -20,5 +20,6 @@ from django.urls import include, path
 app_name = "main"
 urlpatterns = [
     path('', include("home.urls", namespace="home")),
+    path('', include("widget_homepage.urls", namespace="widget_homepage")),
     path('admin/', admin.site.urls),
 ]
